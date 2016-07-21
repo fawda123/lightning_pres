@@ -1,0 +1,146 @@
+\documentclass[serif]{beamer}
+\usetheme{EPA}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shadows,arrows,positioning,trees}
+
+\newcommand{\emtxt}[1]{\textbf{\textit{#1}}}
+
+\tikzstyle{block} = [rectangle, draw, text width=7em, text centered, rounded corners, minimum height=3em, minimum width=7em, top color = white, bottom color=brown!30,  drop shadow]
+
+% knitr setup
+<<setup, include = F, cache = F>>=
+# set global chunk options
+opts_chunk$set(fig.path='fig/', fig.align='center', fig.show='hold',message=F,results='asis',dev='pdf',dev.args=list(family='serif'),fig.pos='!ht',warning=F)
+options(replace.assign=T,digits=1)
+@
+  
+\begin{document}
+
+\title[NERRS Analysis Tools]{{\bf Five minutes in an elevator at 30000 feet}}
+
+\author[M. Beck]{Marcus W. Beck}
+
+\date{July 27, 2016}
+
+\institute[]{\inst{1} USEPA NHEERL Gulf Ecology Division\\ Email: \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}}
+
+%%%%%%
+\begin{frame}
+\vspace{-0.1in}
+\titlepage
+\end{frame}
+
+%%%%%%
+\begin{frame}{Choosing your own adventure}
+\includegraphics<1>[width = \textwidth]{fig/Picture1.png}
+\includegraphics<2>[width = \textwidth]{fig/Picture2.png}
+\end{frame}
+
+%%%%%%
+\begin{frame}{Choosing your own adventure}
+\setbeamercovered{again covered={\opaqueness<1->{45}}}
+\begin{columns}[t]
+\begin{column}{0.35\textwidth}
+\onslide<1>
+\underline{\textbf{13 years old}}\\~\\
+\begin{enumerate}
+\item Learn to fly \\~\\
+\item Join Air Force \\~\\
+\item Fighter pilot/ professional skateboarder
+\end{enumerate}
+\end{column}
+\begin{column}{0.35\textwidth}
+\onslide<2>
+\underline{\textbf{20 years old}}\\~\\
+\begin{enumerate}
+\item BSc in Zoology \\~\\
+\item Intern for FWC \\~\\
+\item MSc in Conservation Biology \\~\\
+\item Fisheries Biologist
+\end{enumerate}
+\end{column}
+\begin{column}{0.35\textwidth}
+\onslide<3>
+\underline{\textbf{30 years old}}\\~\\
+\begin{enumerate}
+\setcounter{enumi}{3}
+\item Intern for MNDNR \\~\\
+\item PhD in Conservation Biology \\~\\
+\item ORISE post-doc \\~\\
+\item Fed post-doc \\~\\
+\end{enumerate}
+\end{column}
+\end{columns}
+\onslide<3>
+\begin{tikzpicture}[overlay]
+\draw[thick,->] (6.7,2.8) -- (7.9,4.75);
+\end{tikzpicture}
+\end{frame}
+
+%%%%%%
+\begin{frame}{Elements of the adventure}
+
+% \setbeamercovered{again covered={\opaqueness<1->{45}}}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+  \begin{itemize}
+  \setlength\itemsep{1.5em}
+    \only<1>{ 
+      \item Water quality
+      \item Biological monitoring
+      \item Eutrophication
+      \item Aquatic Macrophytes
+      \item Ecosystem metabolism
+    }
+    \only<2>{
+      \item NeuralNetTools
+      \item SWMPr
+      \item WtRegDO
+      \item WRTDStidal
+      \item ggord
+      \item rStrava
+    }
+    \only<3->{
+      \item Indicator development
+      \item Time series methods
+      \item Reproducible research
+      \item Visualization and graphics
+      \item Model comparisons
+    }
+  \end{itemize}
+\end{column}
+
+\begin{column}{0.4\textwidth}
+\begin{tikzpicture}
+  \begin{scope}
+
+    % The transparency:
+    \begin{scope}[fill opacity=0.5]
+      \onslide<3->\fill[gray] (-1, 0) circle (1.5);
+      \onslide<2->\fill[gray] (1, 0) circle (1.5);
+      \onslide<1->\fill[gray] (0, 1.73) circle (1.5);
+    \end{scope}
+    
+    % letterings and missing pieces:
+    \onslide<3->\draw[align=center] (-1, 0) circle (1.5);
+    \onslide<2->\draw[align=center] (1, 0) circle (1.5);
+    \onslide<1->\draw[align=center] (0, 1.73) circle (1.5);
+    \onslide<3->\draw (-1.3, 0) node[scale=1,align=center] {Data \\ Analysis};
+    \onslide<2->\draw (1.3, 0) node[scale=1.2] {R};
+    \onslide<1->\draw (0, 2) node[scale=1,align=center] {Aquatic \\ Ecology};
+ 		\onslide<4->\draw (0, 0.6) node[scale=0.8] {me?};
+ 		
+  \end{scope}
+\end{tikzpicture}
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}{}
+
+\end{frame}
+
+\end{document}
