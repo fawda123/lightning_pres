@@ -18,7 +18,7 @@ options(replace.assign=T,digits=1)
   
 \begin{document}
 
-\title[NERRS Analysis Tools]{{\bf Five minutes in an elevator at 30000 feet}}
+\title[NERRS Analysis Tools]{{\bf Five minutes in an elevator at 30000 feet over a mile-wide canyon}}
 
 \author[M. Beck]{Marcus W. Beck}
 
@@ -34,8 +34,12 @@ options(replace.assign=T,digits=1)
 
 %%%%%%
 \begin{frame}{Choosing your own adventure}
-\includegraphics<1>[width = \textwidth]{fig/Picture1.png}
-\includegraphics<2>[width = \textwidth]{fig/Picture2.png}
+\includegraphics[width = \textwidth]{fig/Picture1.png}
+\end{frame}
+
+%%%%%%
+\begin{frame}{Choosing your own adventure}
+\includegraphics[width = \textwidth]{fig/Picture2.png}
 \end{frame}
 
 %%%%%%
@@ -138,28 +142,28 @@ options(replace.assign=T,digits=1)
 \end{columns}
 \end{frame}
 
-%%%%%%
-\begin{frame}[t]{Elements of the adventure}
-\onslide<1->
-\centerline{\includegraphics[width = 0.8\textwidth]{fig/lopaper.png}} 
-\vspace{0.1in}
-\begin{columns}[T]
-  \begin{column}{0.3\textwidth}
-   \onslide<1->
-    \textbf{\underline{Ecology}}\\~\\
-    Can we get `better' metabolic estimates?
-  \end{column}
-  \begin{column}{0.3\textwidth}
-    \onslide<2->
-    \textbf{\underline{R}}\\~\\
-    \texttt{WtRegDO} software package as supplement
-  \end{column}
-  \begin{column}{0.3\textwidth}
-    \onslide<3->
-    \textbf{\underline{Data analysis}}\\~\\
-    Novel application of WRTDS method and online viz products
-  \end{column}
-\end{columns}
-\end{frame}
+% %%%%%%
+% \begin{frame}[t]{Elements of the adventure}
+% \onslide<1->
+% \centerline{\includegraphics[width = 0.8\textwidth]{fig/lopaper.png}} 
+% \vspace{0.1in}
+% \begin{columns}[T]
+%   \begin{column}{0.3\textwidth}
+%    \onslide<1->
+%     \textbf{\underline{Ecology}}\\~\\
+%     Can we get `better' metabolic estimates?
+%   \end{column}
+%   \begin{column}{0.3\textwidth}
+%     \onslide<2->
+%     \textbf{\underline{R}}\\~\\
+%     \texttt{WtRegDO} software package as supplement
+%   \end{column}
+%   \begin{column}{0.3\textwidth}
+%     \onslide<3->
+%     \textbf{\underline{Data analysis}}\\~\\
+%     Novel application of WRTDS method and online viz products
+%   \end{column}
+% \end{columns}
+% \end{frame}
 
 \end{document}
